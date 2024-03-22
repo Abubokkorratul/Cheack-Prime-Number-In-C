@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+
+    int counter,i,j,n=300;
+
+    for(i=1;i<=n;i++){
+       counter=0;
+      for(j=2;j<i;j++){
+        if(i%j==0){
+          counter++;
+          break;
+        }
+      }
+      if(counter==0 && i!=1)
+      printf("%d \n",i);
+    }
+
+    return 0;
+}
+
